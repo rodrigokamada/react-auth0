@@ -26,6 +26,13 @@ Before you start, you need to install and configure the tools:
 ## Getting started
 
 
+### Create and configure the account on the Auth0
+
+**1.** Let's create the account. Access the site [https://auth0.com/](https://auth0.com/) and do steps 1 and 9 of the post *[Authentication using the Auth0 to an Angular application](https://github.com/rodrigokamada/angular-auth0)* to create and configure the account on the Auth0.
+
+
+
+
 ### Create the React application
 
 
