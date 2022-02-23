@@ -5,6 +5,12 @@
   "author": "Rodrigo Kamada <rodrigo@kamada.com.br> (https://github.com/rodrigokamada)",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --watchAll=false",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@auth0/auth0-react": "^1.9.0",
     "@testing-library/jest-dom": "^5.16.2",
@@ -15,11 +21,8 @@
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@types/date-fns": "^2.6.0"
   },
   "eslintConfig": {
     "extends": [
