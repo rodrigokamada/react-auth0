@@ -2,6 +2,7 @@
   "name": "react-auth0",
   "version": "1.0.0",
   "description": "Application example built with React with authentication using the Auth0 service.",
+  "homepage": "https://rodrigokamada.github.io/react-auth0/",
   "author": "Rodrigo Kamada <rodrigo@kamada.com.br> (https://github.com/rodrigokamada)",
   "license": "MIT",
   "private": true,
