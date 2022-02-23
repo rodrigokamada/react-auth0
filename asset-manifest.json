@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-auth0/static/css/main.073c9b0a.css",
-    "main.js": "/react-auth0/static/js/main.1f8769d4.js",
+    "main.js": "/react-auth0/static/js/main.692123a6.js",
     "static/js/787.d54f8082.chunk.js": "/react-auth0/static/js/787.d54f8082.chunk.js",
     "static/media/logo.svg": "/react-auth0/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react-auth0/index.html",
     "main.073c9b0a.css.map": "/react-auth0/static/css/main.073c9b0a.css.map",
-    "main.1f8769d4.js.map": "/react-auth0/static/js/main.1f8769d4.js.map",
+    "main.692123a6.js.map": "/react-auth0/static/js/main.692123a6.js.map",
     "787.d54f8082.chunk.js.map": "/react-auth0/static/js/787.d54f8082.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.1f8769d4.js"
+    "static/js/main.692123a6.js"
   ]
 }
