@@ -125,7 +125,6 @@ function App() {
           </Container>
         </AppBar>
         <Routes>
-          <Route path="/" element={<App />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/signIn" element={<SignIn />} />
         </Routes>
