@@ -30,7 +30,7 @@ function App() {
 
   return (
     <Container maxWidth="xl" sx={{ p: '0px !important' }}>
-      <BrowserRouter>
+      <BrowserRouter basename="/react-auth0">
         <AppBar position="static">
           <Container maxWidth="xl">
             <Toolbar disableGutters>
@@ -71,15 +71,28 @@ function App() {
                     display: { xs: 'block', md: 'none' },
                   }}
                 >
+                  {!isAuthenticated &&
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">
                       <Button component={RouterLink} to="/signIn">Sign In</Button>
                     </Typography>
                   </MenuItem>
-                  {isAuthenticated && 
+                  }
+                  {isAuthenticated &&
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">
                       <Button component={RouterLink} to="/profile">Profile</Button>
+                    </Typography>
+                  </MenuItem>
+                  }
+                  {isAuthenticated &&
+                  <MenuItem onClick={() => {
+                      handleCloseNavMenu();
+                      logout({ returnTo: window.location.origin + '/react-auth0' });
+                    }}
+                  >
+                    <Typography textAlign="center">
+                      <Button >Sign Out</Button>
                     </Typography>
                   </MenuItem>
                   }
@@ -94,6 +107,7 @@ function App() {
                 React Auth0
               </Typography>
               <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                {!isAuthenticated &&
                 <Button
                   component={RouterLink}
                   to="/signIn"
@@ -101,7 +115,8 @@ function App() {
                 >
                   Sign In
                 </Button>
-                {isAuthenticated && 
+                }
+                {isAuthenticated &&
                 <Button
                   component={RouterLink}
                   to="/profile"
@@ -110,10 +125,10 @@ function App() {
                   Profile
                 </Button>
                 }
-                {isAuthenticated && 
+                {isAuthenticated &&
                 <Button
                   onClick={() => {
-                    logout({ returnTo: window.location.origin });
+                    logout({ returnTo: window.location.origin + '/react-auth0' });
                   }}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
@@ -127,6 +142,7 @@ function App() {
         <Routes>
           <Route path="/profile" element={<Profile />} />
           <Route path="/signIn" element={<SignIn />} />
+          <Route path="*" element={<SignIn />} />
         </Routes>
       </BrowserRouter>
     </Container>
