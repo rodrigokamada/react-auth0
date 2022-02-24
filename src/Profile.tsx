@@ -11,7 +11,7 @@ function Profile() {
       {isAuthenticated &&
       <Grid container>
         <Grid container justifyContent="center">
-          <Grid spacing={0} sx={{ m: 1 }}>
+          <Grid sx={{ m: 1 }}>
             <Avatar alt={user?.email} src={user?.picture} sx={{ width: 75, height: 75 }} />
           </Grid>
           <Grid item xs={12} sx={{ m: 1 }}>
