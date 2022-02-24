@@ -71,6 +71,15 @@ function App() {
                     display: { xs: 'block', md: 'none' },
                   }}
                 >
+                  <MenuItem onClick={(e) => {
+                      e.preventDefault();
+                      window.location.href = 'https://rodrigokamada.github.io/angular-auth0/';
+                    }}
+                  >
+                    <Typography textAlign="center">
+                      <Button>Angular Application</Button>
+                    </Typography>
+                  </MenuItem>
                   {!isAuthenticated &&
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">
@@ -107,6 +116,15 @@ function App() {
                 React Auth0
               </Typography>
               <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                <Button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = 'https://rodrigokamada.github.io/angular-auth0/';
+                  }}
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  Angular Application
+                </Button>
                 {!isAuthenticated &&
                 <Button
                   component={RouterLink}
