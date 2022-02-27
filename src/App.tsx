@@ -30,7 +30,7 @@ function App() {
 
   return (
     <Container maxWidth="xl" sx={{ p: '0px !important' }}>
-      <BrowserRouter>
+      <BrowserRouter basename="/react-auth0">
         <AppBar position="static">
           <Container maxWidth="xl">
             <Toolbar disableGutters>
