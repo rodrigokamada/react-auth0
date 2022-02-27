@@ -30,7 +30,7 @@ function App() {
 
   return (
     <Container maxWidth="xl" sx={{ p: '0px !important' }}>
-      <BrowserRouter basename="/react-auth0">
+      <BrowserRouter basename="/">
         <AppBar position="static">
           <Container maxWidth="xl">
             <Toolbar disableGutters>
@@ -83,14 +83,14 @@ function App() {
                   {!isAuthenticated &&
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">
-                      <Button component={RouterLink} to="/signIn">Sign In</Button>
+                      <Button component={RouterLink} to="/react-auth0/signIn">Sign In</Button>
                     </Typography>
                   </MenuItem>
                   }
                   {isAuthenticated &&
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">
-                      <Button component={RouterLink} to="/profile">Profile</Button>
+                      <Button component={RouterLink} to="/react-auth0/profile">Profile</Button>
                     </Typography>
                   </MenuItem>
                   }
@@ -128,7 +128,7 @@ function App() {
                 {!isAuthenticated &&
                 <Button
                   component={RouterLink}
-                  to="/signIn"
+                  to="/react-auth0/signIn"
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   Sign In
@@ -137,7 +137,7 @@ function App() {
                 {isAuthenticated &&
                 <Button
                   component={RouterLink}
-                  to="/profile"
+                  to="/react-auth0/profile"
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   Profile
