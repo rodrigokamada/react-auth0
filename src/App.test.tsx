@@ -6,5 +6,5 @@ test('renders react auth0', () => {
     render(<App />);
     const element = screen.getAllByText(/react auth0/i);
     expect(element).toHaveLength(2);
-  }, 1000);
+  }, 2000);
 });
