@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 import './index.css';
 import App from './App';
-import Profile from './Profile';
-import SignIn from './SignIn';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
