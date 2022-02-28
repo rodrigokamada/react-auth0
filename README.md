@@ -1,6 +1,6 @@
-# Angular Auth0
+# React Auth0
 
-Application example built with React with authentication using the Auth0 service.
+Application example built with [React](https://reactjs.org/) with authentication using the [Auth0](https://auth0.com/) service.
 
 This tutorial was posted on my [blog](https://rodrigo.kamada.com.br/blog/autenticacao-usando-o-auth0-em-uma-aplicacao-react) in portuguese and on the [DEV Community]() in english.
 
