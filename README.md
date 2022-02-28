@@ -190,6 +190,7 @@ export default Profile;
 **8.** Change the `src/index.tsx` file. Import the `Auth0Provider` component and configure the parameter `domain` with the Auth0 domain and the parameter `clientId` with the Auth0 Client ID as below.
 
 ```typescript
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 import './index.css';
@@ -197,13 +198,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <Auth0Provider
-    domain="dev-5tf99p7c.us.auth0.com"
-    clientId="GBPB42qhMWCtvrwGmYxvm5cbHXU68nzG"
-    redirectUri={window.location.origin + '/react-auth0/profile'}
-  >
-    <App />
-  </Auth0Provider>,
+  <React.StrictMode>
+    <Auth0Provider
+      domain="dev-5tf99p7c.us.auth0.com"
+      clientId="GBPB42qhMWCtvrwGmYxvm5cbHXU68nzG"
+      redirectUri={window.location.origin + '/react-auth0/profile'}
+    >
+      <App />
+    </Auth0Provider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 ```
@@ -409,3 +412,55 @@ webpack 5.69.1 compiled successfully in 1275 ms
 **11.** Ready! Access the URL `http://localhost:300/react-auth0` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/react-auth0/) and [Stackblitz](https://stackblitz.com/edit/react17-auth0).
 
 ![React Auth0](https://res.cloudinary.com/rodrigokamada/image/upload/v1645713765/Blog/react-auth0/react-auth0.png)
+
+
+
+### Testing the application sign in
+
+**1.** Let's test the application sign in. Access the URL `http://localhost:3000/react-auth0` and click on the button *Sign in*.
+
+![Application - Sign in](https://res.cloudinary.com/rodrigokamada/image/upload/v1645714984/Blog/react-auth0/application-step1.png)
+
+**2.** Click on the button *Sign up*.
+
+![Application - Log in](https://res.cloudinary.com/rodrigokamada/image/upload/v1645722889/Blog/react-auth0/application-step2.png)
+
+**3.** Fill in the fields *Email Address*, *Password* and click on the button *Continue*.
+
+![Application - Sign up](https://res.cloudinary.com/rodrigokamada/image/upload/v1645722889/Blog/react-auth0/application-step3.png)
+
+**4.** Click on the button *Accept*.
+
+![Application - Authorize app](https://res.cloudinary.com/rodrigokamada/image/upload/v1645723052/Blog/react-auth0/application-step4.png)
+
+**5.** You will be redirected to the application.
+
+![Application - Profile](https://res.cloudinary.com/rodrigokamada/image/upload/v1646010451/Blog/react-auth0/application-step5.png)
+
+**6.** Check the registered email.
+
+![Application - Verify your account](https://res.cloudinary.com/rodrigokamada/image/upload/v1646010304/Blog/react-auth0/application-step6.png)
+
+**7.** Ready! We test the application sign in and profile view. Auth0 documentation is available at [https://auth0.com/docs](https://auth0.com/docs).
+
+
+
+## Cloning the application
+
+**1.** Clone the repository.
+
+```shell
+git clone git@github.com:rodrigokamada/react-auth0.git
+```
+
+**2.** Install the dependencies.
+
+```shell
+npm ci
+```
+
+**3.** Run the application.
+
+```shell
+npm start
+```
