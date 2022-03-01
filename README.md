@@ -431,7 +431,7 @@ webpack 5.69.1 compiled successfully in 1275 ms
 
 **4.** Click on the button *Accept*.
 
-![Application - Authorize app](https://res.cloudinary.com/rodrigokamada/image/upload/v1645723052/Blog/react-auth0/application-step4.png)
+![Application - Authorize app](https://res.cloudinary.com/rodrigokamada/image/upload/v1646131163/Blog/react-auth0/application-step4.png)
 
 **5.** You will be redirected to the application.
 
