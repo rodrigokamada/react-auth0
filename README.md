@@ -1,6 +1,6 @@
 # React Auth0
 
-Application example built with [React](https://reactjs.org/) with authentication using the [Auth0](https://auth0.com/) service.
+Application example built with [React](https://reactjs.org/) 18 with authentication using the [Auth0](https://auth0.com/) service.
 
 This tutorial was posted on my [blog](https://rodrigo.kamada.com.br/blog/autenticacao-usando-o-auth0-em-uma-aplicacao-react) in portuguese and on the [DEV Community](https://dev.to/rodrigokamada/authentication-using-the-auth0-to-an-react-application-3da3) in english.
 
@@ -409,7 +409,7 @@ cached modules 2.66 MiB (javascript) 32.5 KiB (runtime) [cached] 602 modules
 webpack 5.69.1 compiled successfully in 1275 ms
 ```
 
-**11.** Ready! Access the URL `http://localhost:300/react-auth0` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/react-auth0/) and [Stackblitz](https://stackblitz.com/edit/react17-auth0).
+**11.** Ready! Access the URL `http://localhost:300/react-auth0` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/react-auth0/) and [Stackblitz](https://stackblitz.com/edit/react18-auth0).
 
 ![React Auth0](https://res.cloudinary.com/rodrigokamada/image/upload/v1645713765/Blog/react-auth0/react-auth0.png)
 
